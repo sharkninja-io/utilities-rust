@@ -1,0 +1,56 @@
+{
+    "version" : 1,
+    "data" : {
+      "items" : [
+        {
+          "titleLabel": "",
+          "uuid" : "973BFF02-8E3A-4A14-A32C-E098F2AE2319",
+          "date" : "2023-02-21T00:00:00+0000",
+          "frequency" : "once",
+          "executionScope" : "app",
+          "includedInHistory" : false,
+          "isFinalItem" : true,
+          "contentURLs" : {
+            "EN_US" : "https://fisharefriends.s3.amazonaws.com/releasenotes/2023/02/matrix/index.html",
+            "FR_FR" : "https://fisharefriends.s3.amazonaws.com/releasenotes/2023/02/matrix/index.html",
+            "FR_CA" : "https://fisharefriends.s3.amazonaws.com/releasenotes/2023/02/matrix/index.html",
+            "ZH_CN" : "https://fisharefriends.s3.amazonaws.com/releasenotes/2023/02/matrix/index.html",
+            "EN_GB" : "https://fisharefriends.s3.amazonaws.com/releasenotes/2023/02/matrix/index.html",
+            "ES_ES" : "https://fisharefriends.s3.amazonaws.com/releasenotes/2023/02/matrix/index.html",
+            "IT_IT" : "https://fisharefriends.s3.amazonaws.com/releasenotes/2023/02/matrix/index.html",
+            "DE_DE" : "https://fisharefriends.s3.amazonaws.com/releasenotes/2023/02/matrix/index.html",
+            "JA_JP" : "https://fisharefriends.s3.amazonaws.com/releasenotes/2023/02/matrix/index.html"
+          },
+          "actions" : {
+            "forceAppUpdate" : false,
+            "displayContentURL" : true,
+            "forceLogout" : false
+          },
+          "predicates" : [
+            {
+              "op" : "and",
+              "conditions" : [
+                {
+                  "name" : "appVersionMin",
+                  "value" : "3022"
+                }
+              ]
+            },
+            {
+              "op" : "or",
+              "conditions" : [
+                {
+                  "name" : "deviceFamily",
+                  "value" : "Three60"
+                },
+                {
+                  "name" : "deviceFamily",
+                  "value" : "Three60WetDry"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }

@@ -1,0 +1,24 @@
+[workspace]
+members = [
+    "mantle",
+    "android",
+    "ios",
+    "confenc",
+    "confenc/macros",
+    "confenc/crydec",
+    "ios-binding-generator",
+    "ios-binding-generator/macros",
+    "ios-binding-generator/runtime",
+    "android-binding-generator",
+    "android-binding-generator/macros",
+    "android-binding-generator/runtime",
+    "macros",
+  
+]
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
